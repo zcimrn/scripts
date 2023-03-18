@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+sudo curl -Lo /tmp/nvim "https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage"
+sudo rm -f /usr/bin/nvim
+sudo cp /tmp/nvim /usr/bin/nvim
+sudo rm -f /tmp/nvim
+
+sudo chmod +x /usr/bin/nvim
+
+sudo ln -sf /usr/bin/nvim /usr/bin/vim
+sudo ln -sf /usr/bin/nvim /usr/bin/vi

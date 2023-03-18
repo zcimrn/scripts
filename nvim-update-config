@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+CONFIG_DIR="${HOME}/.config/nvim"
+
+rm -rf "${CONFIG_DIR}"
+git clone --depth 1 "https://github.com/zcimrn/nvim" "${CONFIG_DIR}"
